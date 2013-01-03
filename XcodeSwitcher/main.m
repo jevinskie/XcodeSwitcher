@@ -11,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
+    NSLog(@"starting...");
     @autoreleasepool {
         [NSApplication sharedApplication];
         
@@ -21,5 +22,4 @@ int main(int argc, char *argv[])
     }
     
     return EXIT_SUCCESS;
-//    return NSApplicationMain(argc, (const char **)argv);
 }
