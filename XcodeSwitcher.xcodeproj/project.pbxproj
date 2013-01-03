@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		826E2D181694EA68007CA3C2 /* XcodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E2D171694EA68007CA3C2 /* XcodeHelper.m */; };
 		82A7C2E61694CDE700D17313 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A7C2E51694CDE700D17313 /* Cocoa.framework */; };
 		82A7C2F01694CDE700D17313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82A7C2EE1694CDE700D17313 /* InfoPlist.strings */; };
 		82A7C2F21694CDE700D17313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7C2F11694CDE700D17313 /* main.m */; };
 		82A7C2F61694CDE700D17313 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82A7C2F41694CDE700D17313 /* Credits.rtf */; };
 		82A7C2F91694CDE700D17313 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7C2F81694CDE700D17313 /* AppDelegate.m */; };
-		82A7C2FC1694CDE700D17313 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A7C2FA1694CDE700D17313 /* MainMenu.xib */; };
 		82A7C3041694CDE700D17313 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A7C3031694CDE700D17313 /* SenTestingKit.framework */; };
 		82A7C3051694CDE700D17313 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A7C2E51694CDE700D17313 /* Cocoa.framework */; };
 		82A7C30D1694CDE700D17313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82A7C30B1694CDE700D17313 /* InfoPlist.strings */; };
 		82A7C3101694CDE700D17313 /* XcodeSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7C30F1694CDE700D17313 /* XcodeSwitcherTests.m */; };
+		82A7C31B1694D3EF00D17313 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82A7C31A1694D3EF00D17313 /* notes.txt */; };
+		82A7C31D1694D6D200D17313 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A7C31C1694D6D200D17313 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		826E2D161694EA68007CA3C2 /* XcodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeHelper.h; sourceTree = "<group>"; };
+		826E2D171694EA68007CA3C2 /* XcodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeHelper.m; sourceTree = "<group>"; };
 		82A7C2E21694CDE700D17313 /* XcodeSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A7C2E51694CDE700D17313 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		82A7C2E81694CDE700D17313 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		82A7C2E91694CDE700D17313 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		82A7C2EA1694CDE700D17313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		82A7C2ED1694CDE700D17313 /* XcodeSwitcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeSwitcher-Info.plist"; sourceTree = "<group>"; };
 		82A7C2EF1694CDE700D17313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -42,13 +45,14 @@
 		82A7C2F51694CDE700D17313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		82A7C2F71694CDE700D17313 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82A7C2F81694CDE700D17313 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		82A7C2FB1694CDE700D17313 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		82A7C3021694CDE700D17313 /* XcodeSwitcherTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeSwitcherTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A7C3031694CDE700D17313 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		82A7C30A1694CDE700D17313 /* XcodeSwitcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeSwitcherTests-Info.plist"; sourceTree = "<group>"; };
 		82A7C30C1694CDE700D17313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82A7C30E1694CDE700D17313 /* XcodeSwitcherTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeSwitcherTests.h; sourceTree = "<group>"; };
 		82A7C30F1694CDE700D17313 /* XcodeSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeSwitcherTests.m; sourceTree = "<group>"; };
+		82A7C31A1694D3EF00D17313 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = notes.txt; path = Documentation/notes.txt; sourceTree = "<group>"; };
+		82A7C31C1694D6D200D17313 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A7C31D1694D6D200D17313 /* CoreFoundation.framework in Frameworks */,
 				82A7C2E61694CDE700D17313 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +80,7 @@
 		82A7C2D91694CDE700D17313 = {
 			isa = PBXGroup;
 			children = (
+				82A7C3191694D3C800D17313 /* Documentation */,
 				82A7C2EB1694CDE700D17313 /* XcodeSwitcher */,
 				82A7C3081694CDE700D17313 /* XcodeSwitcherTests */,
 				82A7C2E41694CDE700D17313 /* Frameworks */,
@@ -94,6 +100,7 @@
 		82A7C2E41694CDE700D17313 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82A7C31C1694D6D200D17313 /* CoreFoundation.framework */,
 				82A7C2E51694CDE700D17313 /* Cocoa.framework */,
 				82A7C3031694CDE700D17313 /* SenTestingKit.framework */,
 				82A7C2E71694CDE700D17313 /* Other Frameworks */,
@@ -105,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				82A7C2E81694CDE700D17313 /* AppKit.framework */,
-				82A7C2E91694CDE700D17313 /* CoreData.framework */,
 				82A7C2EA1694CDE700D17313 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
@@ -116,8 +122,9 @@
 			children = (
 				82A7C2F71694CDE700D17313 /* AppDelegate.h */,
 				82A7C2F81694CDE700D17313 /* AppDelegate.m */,
-				82A7C2FA1694CDE700D17313 /* MainMenu.xib */,
 				82A7C2EC1694CDE700D17313 /* Supporting Files */,
+				826E2D161694EA68007CA3C2 /* XcodeHelper.h */,
+				826E2D171694EA68007CA3C2 /* XcodeHelper.m */,
 			);
 			path = XcodeSwitcher;
 			sourceTree = "<group>";
@@ -151,6 +158,14 @@
 				82A7C30B1694CDE700D17313 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82A7C3191694D3C800D17313 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				82A7C31A1694D3EF00D17313 /* notes.txt */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +241,7 @@
 			files = (
 				82A7C2F01694CDE700D17313 /* InfoPlist.strings in Resources */,
 				82A7C2F61694CDE700D17313 /* Credits.rtf in Resources */,
-				82A7C2FC1694CDE700D17313 /* MainMenu.xib in Resources */,
+				82A7C31B1694D3EF00D17313 /* notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +278,7 @@
 			files = (
 				82A7C2F21694CDE700D17313 /* main.m in Sources */,
 				82A7C2F91694CDE700D17313 /* AppDelegate.m in Sources */,
+				826E2D181694EA68007CA3C2 /* XcodeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +315,6 @@
 				82A7C2F51694CDE700D17313 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		82A7C2FA1694CDE700D17313 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82A7C2FB1694CDE700D17313 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		82A7C30B1694CDE700D17313 /* InfoPlist.strings */ = {
@@ -452,6 +460,7 @@
 				82A7C3151694CDE700D17313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82A7C3161694CDE700D17313 /* Build configuration list for PBXNativeTarget "XcodeSwitcherTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +469,7 @@
 				82A7C3181694CDE700D17313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
