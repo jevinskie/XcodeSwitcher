@@ -11,14 +11,19 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void)applicationDidFinishLaunching:(NSNotification *)Notification
 {
+    NSLog(@"starting");
     statusMenu = [[NSMenu alloc] initWithTitle:@"Xcode"];
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     statusItem.menu = statusMenu;
     statusItem.title = [statusMenu title];
     statusItem.highlightMode = YES;
     [self updateMenu];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    NSLog(@"quitting");
 }
 
 - (void)updateMenu {
@@ -33,13 +38,18 @@
         }
         i++;
         NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:path action:@selector(clicked:) keyEquivalent:key];
-        item.target = self;
         [statusMenu addItem:item];
     }
+    [statusMenu addItemWithTitle:@"Quit" action:@selector(quit:) keyEquivalent:@"q"];
 }
 
 - (void)clicked:(NSMenuItem *)item {
     NSLog(@"clicked %@", item.title);
+    [XcodeHelper setXcodePath:item.title];
+}
+
+- (void)quit:(NSMenuItem *)item {
+    [[NSApplication sharedApplication] terminate:self];
 }
 
 @end

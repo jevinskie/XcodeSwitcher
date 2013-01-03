@@ -65,4 +65,11 @@ static NSArray *xcodePaths;
     return [self stripContentsDeveloper:path_w_cd];
 }
 
++ (void)setXcodePath:(NSString *)path {
+    NSLog(@"setting path to %@", path);
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath:@"/usr/bin/xcode-select"];
+    // whoops this needs auth... see https://github.com/atnan/SMJobBlessXPC
+}
+
 @end

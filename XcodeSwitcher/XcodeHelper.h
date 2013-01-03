@@ -15,5 +15,6 @@
 + (NSArray *)getPaths;
 + (NSString *)getCurrentPath;
 + (NSString *)stripContentsDeveloper:(NSString *)path;
++ (void)setXcodePath:(NSString *)path;
 
 @end
