@@ -15,6 +15,7 @@ static NSArray *xcodePaths;
 + (NSArray *)getPaths {
     NSMetadataQuery *query = [[NSMetadataQuery alloc] init];
     query.predicate = [NSPredicate predicateWithFormat:@"kMDItemContentTypeTree == 'com.apple.application-bundle' && (kMDItemExecutableArchitectures == 'ppc' || kMDItemExecutableArchitectures == 'i386' || kMDItemExecutableArchitectures == 'x86_64')"];
+    query.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:NSMetadataItemDisplayNameKey ascending:YES]];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                           selector: @selector(queryFinished:)
                                           name:NSMetadataQueryDidFinishGatheringNotification
@@ -32,7 +33,7 @@ static NSArray *xcodePaths;
     
     for (NSUInteger i = 0; i < [query resultCount]; i++) {
         NSMetadataItem *app = [query resultAtIndex:i];
-        NSString *path = [app valueForAttribute:(NSString *)kMDItemPath];
+        NSString *path = [app valueForAttribute:NSMetadataItemPathKey];
         [appPaths addObject:path];
     }
     
